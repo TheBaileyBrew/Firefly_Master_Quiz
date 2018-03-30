@@ -2,13 +2,74 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <ImageView
+        android:contentDescription="Image of Qui-Gon-Jinn"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/qui_gon_jinn"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="8dp"
         android:textSize="24sp"
-        android:text="This is the second Question"
+        android:text="Which character in 'Star Wars: The Phantom Menace' was intended to betray Qui-Gon Jinn?"
         android:gravity="center"/>
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/question_two_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+                <RadioButton
+                    android:id="@+id/question_two_answer_one"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Watto"/>
+                <RadioButton
+                    android:id="@+id/question_two_answer_two"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="Jar Jar Binks"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/question_two_radio_group2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+            <RadioButton
+                android:id="@+id/question_two_answer_three"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Boss Naass"/>
+            <RadioButton
+                android:id="@+id/question_two_answer_four"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="Captain Panaka"/>
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/question_two_details_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textStyle="italic"
+        android:text="Initially, Jar Jar Binks was set to be a mercenary who befriended Qui-Gon and Obi-Wan only to betray the Jedi Master to serve his own ends."/>
 </LinearLayout>
