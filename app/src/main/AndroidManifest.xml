@@ -28,6 +28,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.thebaileybrew.firefly_master_quiz.QuestionListActivity" />
         </activity>
+        <activity android:name="questionOneDetails" />
     </application>
 
 </manifest>

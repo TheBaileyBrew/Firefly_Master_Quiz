@@ -49,7 +49,7 @@ public class QuestionListActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Add a switch verification to check against the view to change the Snackbar Message depending on what itemID is currently selected
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Snackbar Two", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });

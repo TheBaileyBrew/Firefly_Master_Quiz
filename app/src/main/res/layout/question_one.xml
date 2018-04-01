@@ -16,50 +16,37 @@
         android:textSize="24sp"
         android:text="When did Firefly first air on FOX?"
         android:gravity="center"/>
-    <RadioGroup
-        android:id="@+id/question_one_radio_group"
+
+    <Button
+        android:id="@+id/question_one_answer_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <RadioButton
-                android:id="@+id/question_one_answer_one"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:text="September 2002"/>
-            <RadioButton
-                android:id="@+id/question_one_answer_two"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="8dp"
-                android:text="August 2001"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <RadioButton
-                android:id="@+id/question_one_answer_three"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:text="August 2006"/>
-            <RadioButton
-                android:id="@+id/question_one_answer_four"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="8dp"
-                android:text="September 2003"/>
-        </LinearLayout>
+        android:layout_marginLeft="16dp"
+        android:text="September 2002"/>
+    <Button
+        android:id="@+id/question_one_answer_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="September 2001"/>
+    <Button
+        android:id="@+id/question_one_answer_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="September 2003"/>
+    <Button
+        android:id="@+id/question_one_answer_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="September 2004"/>
 
-    </RadioGroup>
+    <TextView
+        android:id="@+id/question_one_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="This is test data"/>
 
 </LinearLayout>
